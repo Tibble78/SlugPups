@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 5581948120850002803}
   - component: {fileID: 6804464105210171091}
   - component: {fileID: 7584210508764147048}
-  - component: {fileID: 8136087838240210000}
   m_Layer: 0
   m_Name: Slugpup
   m_TagString: Untagged
@@ -124,9 +123,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8136087838240210000}
-        m_TargetAssemblyTypeName: ClickableObjectMenu, Assembly-CSharp
-        m_MethodName: HandleClick
+      - m_Target: {fileID: 5581948120850002803}
+        m_TargetAssemblyTypeName: Slugpup, Assembly-CSharp
+        m_MethodName: onPetClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -151,6 +150,7 @@ MonoBehaviour:
   hunger: 50
   cleanliness: 50
   mood: 50
+  InventoryManager: {fileID: 0}
 --- !u!114 &6804464105210171091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -178,16 +178,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61b585378e164fb4f8df5210a05a3c57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
---- !u!114 &8136087838240210000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 102667693929038345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e37552396d9bded4facb106e4b0f3367, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  contextMenu: {fileID: 0}
